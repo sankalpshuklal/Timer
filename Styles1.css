@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+
+    --backgroundColor_1 : #344e41;
+    --backgroundColor_2 : #3a5a40;
+    --backgroundColor_3 : #588157;
+    --backgroundColor_4 : #a3b18a;
+    --backgroundColor_5 : #dad7cd;
+    --boxshadow_outside : #0f1d16;
+    --backgroundColor_7 : #344e41;    
+}
+
+body{
+    background-color: var(--backgroundColor_1);
+    font-family: 'poppins';
+}
+
+.createButtonDiv{
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    background-color: var(--backgroundColor_3);
+    position:relative;
+    top:126px;
+    left: 37%;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.4), 
+                -2px -2px 1.5px rgba(250,250, 250, 0.5),1px 1px var(--backgroundColor_4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+/* Create section */
+.createSection{
+    height: 80vh;
+    width: 150vh;
+    background-color: var(--boxshadow_outside);
+    position: absolute;
+    top:50px;
+    left:200px;
+    border-radius: 15px;
+    display: flex;
+
+}
+.left_create{
+    height:80vh;
+    width:100vh;
+    background-color: var(--backgroundColor_4);
+    border-top-left-radius:15px ;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.right_create{
+    height: 80vh;
+    width: 50vh;
+    background-color: var(--backgroundColor_3);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px ;
+}
+/* for boxes in the left div of create section */
+#time{
+    height: 32vh;
+    width: 100vh;
+    background-color: var(--backgroundColor_4);
+    border-top-left-radius:15px ;
+
+}
+#description{
+    height: 42vh;
+    width: 100vh;
+    background-color: var(--backgroundColor_2);
+}
+#add_task{
+    height: 6vh;
+    width: 100vh;
+    background-color: var(--backgroundColor_5);
+    border-bottom-left-radius: 15px;
+}
