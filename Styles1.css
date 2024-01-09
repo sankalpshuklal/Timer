@@ -107,24 +107,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* input[type="number"]{
-    height: 50px;
-    width:180px;
-    font-size: 20px;
-    background: none;
-    border: none;
-    outline: none;
-}
-
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-input[type="number"]:focus{
-    border:none;
-    outline:none;
-} */
 #description{
     height: 42vh;
     width: 100vh;
