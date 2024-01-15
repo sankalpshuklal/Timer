@@ -30,4 +30,5 @@ right_input_2.addEventListener('input',function(){
     if (right_input_2.value>9){
         right_input_2.value = (right_input_2.value).slice(0,1);
     }
+    console.log(left_input_1.value);
 })
