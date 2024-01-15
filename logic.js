@@ -2,6 +2,8 @@ var left_input_1 = document.querySelector('.timernumber_01');
 var left_input_2 = document.querySelector('.timernumber_02');
 var right_input_1 = document.querySelector('.timernumber_03');
 var right_input_2 = document.querySelector('.timernumber_04');
+
+//only fill one digit in the input block
 left_input_1.addEventListener('input', function(){
     let input_num = left_input_1.value
     if (left_input_1.value>9){
@@ -30,5 +32,4 @@ right_input_2.addEventListener('input',function(){
     if (right_input_2.value>9){
         right_input_2.value = (right_input_2.value).slice(0,1);
     }
-    console.log(left_input_1.value);
 })
