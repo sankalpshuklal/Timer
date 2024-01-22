@@ -2,6 +2,32 @@ var left_input_1 = document.querySelector('.timernumber_01');
 var left_input_2 = document.querySelector('.timernumber_02');
 var right_input_1 = document.querySelector('.timernumber_03');
 var right_input_2 = document.querySelector('.timernumber_04');
+var createButton = document.querySelector('.createButtonDiv');
+var createSection = document.querySelector('.createSection');
+
+function addClass(element, classname){
+    element.classList.add(`${classname}`);
+}
+function removeClass(element,classname){
+    element.classList.remove(`${classname}`);
+}
+
+//making the create button function 
+createButton.addEventListener('click',async()=>{
+    // createSection.style.display = "block";    
+    await addClass(createButton, 'createButtonTransition');
+    await new Promise ((resolve,reject)=>{
+        setTimeout(() => {
+            removeClass(createButton, 'createButtonTransition');
+            resolve();
+        }, 100);
+
+    });
+    await new Promise((resolve,reject)=>{
+        createSection.style.visibility = "visible";
+        resolve();
+    })
+});
 
 //only fill one digit in the input block
 left_input_1.addEventListener('input', function(){

@@ -33,6 +33,13 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    transition: all 0.1s ease;
+}
+
+/* transition class for create Button div*/
+.createButtonTransition{
+    transform: scale(1.1);
+
 }
 /* Create section */
 .createSection{
@@ -44,6 +51,8 @@ body{
     left:200px;
     border-radius: 15px;
     display: flex;
+    visibility: hidden;
+
 
 }
 .left_create{
