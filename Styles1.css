@@ -51,7 +51,7 @@ body{
     left:200px;
     border-radius: 15px;
     display: flex;
-    visibility: hidden;
+    visibility: visible;
 
 
 }
@@ -121,9 +121,30 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100vh;
     background-color: var(--backgroundColor_2);
 }
+
+#titleInputBox{
+    height: 6vh;
+    width: 90vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+
+}
+
+/*break timer input boxes*/
+.breaktimeNumber{
+    height: 14vh;
+    width: 12vh;
+    margin: 10px;
+    font-size: 60px;
+}
 #add_task{
     height: 6vh;
-    width: 100vh;
-    background-color: var(--backgroundColor_5);
-    border-bottom-left-radius: 15px;
+    width: 90vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--backgroundColor_4);
+    background-color: var(--boxshadow_outside);
 }
