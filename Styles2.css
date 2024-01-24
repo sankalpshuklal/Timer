@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+
+    --backgroundColor_1 : #344e41;
+    --backgroundColor_2 : #3a5a40;
+    --backgroundColor_3 : #588157;
+    --backgroundColor_4 : #a3b18a;
+    --backgroundColor_5 : #dad7cd;
+    --boxshadow_outside : #0f1d16;
+    --backgroundColor_7 : #344e41;    
+}
+
+body{
+    background-color: var(--backgroundColor_1);
+    font-family: 'poppins';
+}
+
+.testcircle{
+    height: 60vh;
+    width: 60vh;
+    background: none;
+    border-radius: 50%;
+    border: 5vh solid var(--backgroundColor_4) ;
+}

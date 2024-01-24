@@ -8,9 +8,10 @@ var breakinput_1 = document.querySelector('.breaktimernumber_01');
 var breakinput_2 = document.querySelector('.breaktimernumber_02');
 var breakinput_3 = document.querySelector('.breaktimernumber_03');
 var breakinput_4 = document.querySelector('.breaktimernumber_04');
-var task_title = document.querySelector('#title');
+var task_title = document.querySelector('#titleInputBox');
 var add_taskbutton = document.querySelector('#add_task');
-
+var rightCreateSection = document.querySelector('.right_create');
+var createRoutineButton = document.querySelector('#setRoutine');
 
 
 
@@ -22,21 +23,21 @@ function removeClass(element,classname){
 }
 
 //making the create button function 
-// createButton.addEventListener('click',async()=>{
-//     // createSection.style.display = "block";    
-//     await addClass(createButton, 'createButtonTransition');
-//     await new Promise ((resolve,reject)=>{
-//         setTimeout(() => {
-//             removeClass(createButton, 'createButtonTransition');
-//             resolve();
-//         }, 100);
+createButton.addEventListener('click',async()=>{
+    // createSection.style.display = "block";    
+    await addClass(createButton, 'createButtonTransition');
+    await new Promise ((resolve,reject)=>{
+        setTimeout(() => {
+            removeClass(createButton, 'createButtonTransition');
+            resolve();
+        }, 100);
 
-//     });
-//     await new Promise((resolve,reject)=>{
-//         createSection.style.visibility = "visible";
-//         resolve();
-//     })
-// });
+    });
+    await new Promise((resolve,reject)=>{
+        createSection.style.visibility = "visible";
+        resolve();
+    })
+});
 
 //only fill one digit in the input block
 left_input_1.addEventListener('input', function(){
@@ -96,7 +97,7 @@ breakinput_3.addEventListener('input',function(){
 })
 breakinput_4.addEventListener('input',function(){
     if (breakinput_4.value>9){
-        breakinput_4.value = (breakinput_1.value).slice(0,1);
+        breakinput_4.value = (breakinput_4.value).slice(0,1);
     }
 })
 
@@ -122,9 +123,14 @@ add_taskbutton.addEventListener('click', ()=>{
     };
     tasks.push(taskitem);
     tasknumber++;
-    console.log(tasks);
-
     //creating the div for displaying the taks in the list
     var newtask = document.createElement('div')
-    newtask.id= "taskitem";
+    newtask.id = "taskitem";
+    newtask.innerHTML = task_title.value;
+    rightCreateSection.appendChild(newtask); 
+
+})
+createRoutineButton.addEventListener('click', ()=>{
+    createSection.style.visibility = "hidden";
+    window.location.href = "./timerun.html";
 })

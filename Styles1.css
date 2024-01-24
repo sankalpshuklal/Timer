@@ -51,7 +51,7 @@ body{
     left:200px;
     border-radius: 15px;
     display: flex;
-    visibility: visible;
+    visibility: hidden;
 
 
 }
@@ -147,4 +147,27 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     color: var(--backgroundColor_4);
     background-color: var(--boxshadow_outside);
+}
+#taskitem{
+    height: 10vh;
+    width: 40vh;
+    margin: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--backgroundColor_4);
+    background-color: var(--boxshadow_outside);
+    border-radius: 10px;
+}
+#setRoutine{
+    height: 7vh;
+    width: 40vh;
+    position:absolute;
+    bottom: 0;
+    margin: 4vh;
+    color: var(--backgroundColor_4);
+    background-color: var(--boxshadow_outside);
+    border-radius: 10px;
+
+    
 }
