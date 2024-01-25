@@ -17,12 +17,50 @@
 body{
     background-color: var(--backgroundColor_1);
     font-family: 'poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.testcircle{
-    height: 60vh;
+#progressBarContainer{
+    height: 5vh;
     width: 60vh;
-    background: none;
-    border-radius: 50%;
-    border: 5vh solid var(--backgroundColor_4) ;
+    background-color: var(--backgroundColor_4) ;
+    margin: 10vh;
 }
+#progressBar{
+    height: 5vh;
+    width: 10vh;
+    background-color: var(--backgroundColor_3) ;
+
+}
+#task_listContainer{
+    height: 50vh;
+    width: 60vh;
+    background-color: var(--backgroundColor_4);
+    margin:10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

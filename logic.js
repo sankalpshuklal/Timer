@@ -14,7 +14,6 @@ var rightCreateSection = document.querySelector('.right_create');
 var createRoutineButton = document.querySelector('#setRoutine');
 
 
-
 function addClass(element, classname){
     element.classList.add(`${classname}`);
 }
@@ -134,3 +133,6 @@ createRoutineButton.addEventListener('click', ()=>{
     createSection.style.visibility = "hidden";
     window.location.href = "./timerun.html";
 })
+
+
+export {tasks};
