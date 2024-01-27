@@ -127,12 +127,13 @@ add_taskbutton.addEventListener('click', ()=>{
     newtask.id = "taskitem";
     newtask.innerHTML = task_title.value;
     rightCreateSection.appendChild(newtask); 
-
 })
-createRoutineButton.addEventListener('click', ()=>{
+createRoutineButton.addEventListener('click', async()=>{
     createSection.style.visibility = "hidden";
     window.location.href = "./timerun.html";
+    module.exports = tasks;
+    
 })
 
 
-export {tasks};
+

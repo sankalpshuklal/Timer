@@ -1,6 +1,12 @@
-import { tasks } from './logic.js';
+(async ()=>{
+    await new Promise((res)=>{
+        let tasks = require('./logic');
+        console.log(tasks);
+        res();
+    })
 
-console.log(tasks);
+    
+})
 
 var progressBarContainer = document.querySelector('#progressBarContainer');
 var progressBar = document.querySelector('#progressBar');
