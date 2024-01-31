@@ -40,8 +40,6 @@ document.addEventListener('DOMContentLoaded',()=>{
             })
         });
         
-    }else{
-        console.log('not found');
     }
 })
 
@@ -159,16 +157,44 @@ if(add_taskbutton){
         newtask.id = "taskitem";
         newtask.innerHTML = task_title.value;
         rightCreateSection.appendChild(newtask); 
+        
     })
 }
 
+//functioning of timerun.html file
+
+let progressBarContainer = document.querySelector('#progressBarContainer');
+let task_listContainer = document.querySelector('#task_listContainer');
+let timerun = document.querySelector('#timerun');
+
+
+let update = 0;
 if(createRoutineButton){
-    createRoutineButton.addEventListener('click', async()=>{
+    createRoutineButton.addEventListener('click',async()=>{
         createSection.style.visibility = "hidden";
+        console.log(tasks);
+        timerun.style.visibility = "visible";
+        //creating the elements in the timerun tasklist as create routine button gets clicked
+
+        // for(let i = 0; i<tasks.length; i++){
+        //     const taskdiv = document.createElement('div');
+        //     taskdiv.className = "taskitems";
+        //     taskdiv.textContent = tasks[i].title;
+        //     taskdiv.style.display = "flex";
+        //     taskdiv.style.justifyContent = "center";
+        //     taskdiv.style.alignItems = "center";
+        //     task_listContainer.appendChild(taskdiv);
+        // };//undefined vs null
+        // const progressBar = document.querySelector('#progressBar');
+
+        // setTimeout(() => {
+        //     progressBar.style.width = `${update}vh`;
+        //     update++;
+        // }, 100);
         window.location.href = "./timerun.html";
-        
+    
     })
     
 }
-let tasklist = tasks;
-export{tasklist};
+
+export{tasks};

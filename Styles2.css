@@ -43,7 +43,14 @@ body{
 }
 
 
+.taskitems{
+    height: 10vh;
+    width: 50vh;
+    background-color: var(--backgroundColor_1);
+    border-radius: 10px;
+    margin: 5vh;
 
+}
 
 
 
