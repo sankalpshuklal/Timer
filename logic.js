@@ -134,6 +134,8 @@ if(breakinput_4){
 
 let tasks = [];
 var tasknumber = 1;
+
+
 if(add_taskbutton){
     add_taskbutton.addEventListener('click', ()=>{
     
@@ -153,10 +155,15 @@ if(add_taskbutton){
         tasks.push(taskitem);
         tasknumber++;
         //creating the div for displaying the taks in the list
+
         var newtask = document.createElement('div')
         newtask.id = "taskitem";
         newtask.innerHTML = task_title.value;
         rightCreateSection.appendChild(newtask); 
+
+
+        document.dispatchEvent(tasksReadyEvent);
+
         
     })
 }
@@ -171,9 +178,9 @@ let timerun = document.querySelector('#timerun');
 let update = 0;
 if(createRoutineButton){
     createRoutineButton.addEventListener('click',async()=>{
-        createSection.style.visibility = "hidden";
-        console.log(tasks);
-        timerun.style.visibility = "visible";
+        // createSection.style.visibility = "hidden";
+        // console.log(tasks);
+        // timerun.style.visibility = "visible";
         //creating the elements in the timerun tasklist as create routine button gets clicked
 
         // for(let i = 0; i<tasks.length; i++){
@@ -184,7 +191,8 @@ if(createRoutineButton){
         //     taskdiv.style.justifyContent = "center";
         //     taskdiv.style.alignItems = "center";
         //     task_listContainer.appendChild(taskdiv);
-        // };//undefined vs null
+        // };
+        
         // const progressBar = document.querySelector('#progressBar');
 
         // setTimeout(() => {
@@ -196,5 +204,3 @@ if(createRoutineButton){
     })
     
 }
-
-export{tasks};

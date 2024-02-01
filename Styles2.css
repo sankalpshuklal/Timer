@@ -23,15 +23,9 @@ body{
     flex-direction: column;
 }
 
-#progressBarContainer{
-    height: 5vh;
-    width: 60vh;
-    background-color: var(--backgroundColor_4) ;
-    margin: 10vh;
-}
+
 #progressBar{
-    height: 5vh;
-    width: 10vh;
+
     background-color: var(--backgroundColor_3) ;
 
 }
