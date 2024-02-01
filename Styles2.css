@@ -23,17 +23,24 @@ body{
     flex-direction: column;
 }
 
-
-#progressBar{
-
-    background-color: var(--backgroundColor_3) ;
-
+#ProgressBar{
+    height: 10vh;
+    width: 50vh;
+    background-color: var(--backgroundColor_4);
+    margin: 100px; 
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
-#task_listContainer{
+
+#taskContainer{
     height: 50vh;
     width: 60vh;
     background-color: var(--backgroundColor_4);
-    margin:10vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 
@@ -42,7 +49,8 @@ body{
     width: 50vh;
     background-color: var(--backgroundColor_1);
     border-radius: 10px;
-    margin: 5vh;
+    margin: 3vh;
+    
 
 }
 
