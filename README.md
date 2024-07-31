@@ -15,3 +15,4 @@ Working on -
 1. when i click on start button and it shows up the block to set the timer 
 2. i can create a routine in that set timer button
 3. and then when i click on the set routine routine is set up in the home 
+4. It will work simultaneously.
